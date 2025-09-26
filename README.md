@@ -1,11 +1,18 @@
 # beneficiaries-services
 
+📚 Getting Started
+
 ## maven
 
 ```bash
 
 mvn spotless:apply
 ```
+
+🤝 Contribution
+
+![Alt](https://repobeats.axiom.co/api/embed/d53d2f110bb50afe70b2c3f629356a759f1e937b.svg "Repobeats analytics image")
+
 [![SonarQube Cloud](https://sonarcloud.io/images/project_badges/sonarcloud-light.svg)](https://sonarcloud.io/summary/new_code?id=rock-hu_beneficiaries-services)
 [![Bugs](https://sonarcloud.io/api/project_badges/measure?project=rock-hu_beneficiaries-services&metric=bugs)](https://sonarcloud.io/summary/new_code?id=rock-hu_beneficiaries-services)
 [![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=rock-hu_beneficiaries-services&metric=code_smells)](https://sonarcloud.io/summary/new_code?id=rock-hu_beneficiaries-services)
