@@ -120,5 +120,4 @@ paths:
                 $ref: "#/components/schemas/OBReadBeneficiary5"
 components:
   schemas:
-    OBReadBeneficiary5:
-      type: object
+    OBReadBeneficiary5: {}

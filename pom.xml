@@ -8,7 +8,7 @@
     </parent>
     <groupId>com.openbanking.beneficiaries</groupId>
     <artifactId>beneficiaries-services</artifactId>
-    <version>1.0.0-SNAPSHOT</version>
+    <version>1.0.0</version>
     <packaging>jar</packaging>
     <name>beneficiaries-services</name>
     <properties>
@@ -550,7 +550,7 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <configuration>
                     <fork>false</fork>
-                    <mainClass>com.openbanking.beneficiaries.Application</mainClass>
+                    <jmxPort>9002</jmxPort>
                     <jvmArguments>-Dspring.application.admin.enabled=true
             -Xms128m
             -Xmx256m
