@@ -1,7 +1,9 @@
 # beneficiaries-services
 
+[![CircleCI](https://circleci.com/gh/rock-hu/beneficiaries-services.svg?style=svg)](https://circleci.com/gh/rock-hu/beneficiaries-services)
 [![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Frock-hu%2Fbeneficiaries-services.svg?type=shield&issueType=license)](https://app.fossa.com/projects/git%2Bgithub.com%2Frock-hu%2Fbeneficiaries-services?ref=badge_shield&issueType=license)
 [![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Frock-hu%2Fbeneficiaries-services.svg?type=shield&issueType=security)](https://app.fossa.com/projects/git%2Bgithub.com%2Frock-hu%2Fbeneficiaries-services?ref=badge_shield&issueType=security)
+
 
 
 📚 Getting Started
