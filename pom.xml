@@ -78,9 +78,7 @@
             <groupId>io.micrometer</groupId>
             <artifactId>micrometer-tracing-bridge-brave</artifactId>
         </dependency>
-        <!--
-
-<dependency>
+        <dependency>
             <groupId>io.sentry</groupId>
             <artifactId>sentry-jdbc</artifactId>
         </dependency>
@@ -108,7 +106,6 @@
             <groupId>io.sentry</groupId>
             <artifactId>sentry-spring-boot-starter</artifactId>
         </dependency>
--->
         <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter</artifactId>
@@ -457,7 +454,7 @@
                     <version>1.4</version>
                     <configuration>
                         <apiDocsUrl>http://localhost:8080/v3/api-docs.yaml</apiDocsUrl>
-                        <outputFileName>${project.version}-api-docs.yaml</outputFileName>
+                        <outputFileName>api-docs.yaml</outputFileName>
                         <outputDir>${project.basedir}/docs</outputDir>
                         <skip>false</skip>
                     </configuration>

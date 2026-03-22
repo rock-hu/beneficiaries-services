@@ -4,7 +4,7 @@
 [![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Frock-hu%2Fbeneficiaries-services.svg?type=shield&issueType=license)](https://app.fossa.com/projects/git%2Bgithub.com%2Frock-hu%2Fbeneficiaries-services?ref=badge_shield&issueType=license)
 [![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Frock-hu%2Fbeneficiaries-services.svg?type=shield&issueType=security)](https://app.fossa.com/projects/git%2Bgithub.com%2Frock-hu%2Fbeneficiaries-services?ref=badge_shield&issueType=security)
 
-
+![Open API](https://validator.swagger.io/validator?url=https://raw.githubusercontent.com/rock-hu/beneficiaries-services/refs/heads/master/docs/api-docs.yaml)
 
 📚 Getting Started
 
