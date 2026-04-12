@@ -15,7 +15,7 @@ management:
   server:
     port: 8080
   endpoints:
-    enabled-by-default: true
+    access.default: read-only
     web:
       exposure:
         include: '*'

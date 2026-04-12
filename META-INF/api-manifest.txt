@@ -1,0 +1,2 @@
+GET /accounts/{AccountId}/beneficiaries
+GET /beneficiaries

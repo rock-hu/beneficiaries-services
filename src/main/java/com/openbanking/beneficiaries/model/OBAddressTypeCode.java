@@ -7,7 +7,7 @@ public enum OBAddressTypeCode {
 	BUSINESS("Business"), CORRESPONDENCE("Correspondence"), DELIVERYTO("DeliveryTo"), MAILTO("MailTo"), POBOX("POBox"), POSTAL("Postal"),
 	RESIDENTIAL("Residential"), STATEMENT("Statement");
 
-	private String value;
+	private final String value;
 
 	OBAddressTypeCode(String value) {
 		this.value = value;
@@ -15,7 +15,7 @@ public enum OBAddressTypeCode {
 
 	@Override
 	public String toString() {
-		return String.valueOf(value);
+		return value;
 	}
 
 	public static OBAddressTypeCode fromValue(String text) {

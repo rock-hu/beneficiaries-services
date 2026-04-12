@@ -6,20 +6,17 @@ import io.swagger.v3.oas.annotations.Parameter;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestHeader;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
 
 @Tag(name = "beneficiaries", description = "beneficiaries")
-@RequestMapping(value = "")
+@RequestMapping("")
 public interface BeneficiariesApi {
 
 	@Operation(summary = "Get Beneficiaries", operationId = "getBeneficiaries", description = "", tags = { "Beneficiaries", })
 
-	@RequestMapping(
-			value = "/beneficiaries",
-			produces = { "application/json; charset=utf-8", "application/json", "application/jose+jwe" },
-			method = RequestMethod.GET)
+	@GetMapping(value = "/beneficiaries", produces = { "application/json; charset=utf-8", "application/json", "application/jose+jwe" })
 	default ResponseEntity<OBReadBeneficiary5> getBeneficiaries(
 			@Parameter(name = "An Authorisation Token as per https://tools.ietf.org/html/rfc6750", required = true)
 			@RequestHeader(value = "Authorization", required = true)

@@ -6,7 +6,7 @@ package com.openbanking.beneficiaries.model;
 public enum OBBeneficiaryType1Code {
 	TRUSTED("Trusted"), ORDINARY("Ordinary");
 
-	private String value;
+	private final String value;
 
 	OBBeneficiaryType1Code(String value) {
 		this.value = value;
@@ -14,7 +14,7 @@ public enum OBBeneficiaryType1Code {
 
 	@Override
 	public String toString() {
-		return String.valueOf(value);
+		return value;
 	}
 
 	public static OBBeneficiaryType1Code fromValue(String text) {
