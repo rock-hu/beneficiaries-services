@@ -22,11 +22,11 @@ public class SwaggerDocumentationConfig {
     public GroupedOpenApi apiGroup(@Autowired Artifact artifact) {
         return GroupedOpenApi.builder()
                 .group("beneficiaries-services")
-                .addOpenApiCustomizer(openApi -> openApi.info(new Info()
-                        .title(StringUtils.join(
-                                new String[] {artifact.getGroupId(), artifact.getArtifactId(), artifact.getVersion()},
-                                ":"))
-                        .version(artifact.getVersion())))
+                // .addOpenApiCustomizer(openApi -> openApi.info(new Info()
+                //         .title(StringUtils.join(
+                //                 new String[] {artifact.getGroupId(), artifact.getArtifactId(), artifact.getVersion()},
+                //                 ":"))
+                //         .version(artifact.getVersion())))
                 .packagesToScan("com.openbanking.beneficiaries.controller")
                 .build();
     }

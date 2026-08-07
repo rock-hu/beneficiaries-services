@@ -1,8 +1,7 @@
 spring:
   application:
     name: beneficiaries-services
-  profiles:
-    active: "dev"
+
   jmx:
     enabled: false
 
@@ -42,9 +41,9 @@ springdoc:
     use-root-path: true
   show-actuator: false
 artifact:
-  groupId: '@project.groupId@'
-  artifactId: '@project.artifactId@'
-  version: '@project.version@'  
+  groupId: "@project.groupId@"
+  artifactId: "@project.artifactId@"
+  version: "@project.version@"  
 sentry:
   dsn: ${SENTRY_DSN_BENEFICIARIES_SERVICES}
   send-default-pii: true    
