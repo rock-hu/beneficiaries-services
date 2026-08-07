@@ -4,26 +4,32 @@ package com.openbanking.beneficiaries.model;
  * Identifies the nature of the postal address.
  */
 public enum OBAddressTypeCode {
-	BUSINESS("Business"), CORRESPONDENCE("Correspondence"), DELIVERYTO("DeliveryTo"), MAILTO("MailTo"), POBOX("POBox"), POSTAL("Postal"),
-	RESIDENTIAL("Residential"), STATEMENT("Statement");
+    BUSINESS("Business"),
+    CORRESPONDENCE("Correspondence"),
+    DELIVERYTO("DeliveryTo"),
+    MAILTO("MailTo"),
+    POBOX("POBox"),
+    POSTAL("Postal"),
+    RESIDENTIAL("Residential"),
+    STATEMENT("Statement");
 
-	private final String value;
+    private final String value;
 
-	OBAddressTypeCode(String value) {
-		this.value = value;
-	}
+    OBAddressTypeCode(String value) {
+        this.value = value;
+    }
 
-	@Override
-	public String toString() {
-		return value;
-	}
+    @Override
+    public String toString() {
+        return value;
+    }
 
-	public static OBAddressTypeCode fromValue(String text) {
-		for (OBAddressTypeCode b : OBAddressTypeCode.values()) {
-			if (String.valueOf(b.value).equals(text)) {
-				return b;
-			}
-		}
-		return null;
-	}
+    public static OBAddressTypeCode fromValue(String text) {
+        for (OBAddressTypeCode b : OBAddressTypeCode.values()) {
+            if (String.valueOf(b.value).equals(text)) {
+                return b;
+            }
+        }
+        return null;
+    }
 }

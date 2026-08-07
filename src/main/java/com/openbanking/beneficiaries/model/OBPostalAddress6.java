@@ -9,12 +9,10 @@ import lombok.Setter;
 /**
  * Information that locates and identifies a specific address, as defined by postal services.
  */
-
 @Schema(description = "Information that locates and identifies a specific address, as defined by postal services.")
 @Getter
 @Setter
 public class OBPostalAddress6 implements Serializable {
-	@Serial
-	private static final long serialVersionUID = 1L;
-
+    @Serial
+    private static final long serialVersionUID = 1L;
 }

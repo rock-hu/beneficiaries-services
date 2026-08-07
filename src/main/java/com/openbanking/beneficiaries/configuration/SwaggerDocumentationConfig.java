@@ -10,20 +10,24 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class SwaggerDocumentationConfig {
 
-	@Bean
+    @Bean
+    public GroupedOpenApi actuatorGroup() {
+        return GroupedOpenApi.builder()
+                .group("actuator")
+                .pathsToMatch("/actuator/**")
+                .build();
+    }
 
-	public GroupedOpenApi actuatorGroup() {
-		return GroupedOpenApi.builder().group("actuator").pathsToMatch("/actuator/**").build();
-	}
-
-	@Bean
-	public GroupedOpenApi apiGroup(@Autowired
-	Artifact artifact) {
-		return GroupedOpenApi.builder().group("beneficiaries-services")
-				.addOpenApiCustomizer(openApi -> openApi
-						.info(new Info().title(StringUtils.join(new String[] { artifact.getGroupId(), artifact.getArtifactId(), artifact.getVersion() }, ":"))
-								.version(artifact.getVersion())))
-				.packagesToScan("com.openbanking.beneficiaries.controller").build();
-	}
-
+    @Bean
+    public GroupedOpenApi apiGroup(@Autowired Artifact artifact) {
+        return GroupedOpenApi.builder()
+                .group("beneficiaries-services")
+                .addOpenApiCustomizer(openApi -> openApi.info(new Info()
+                        .title(StringUtils.join(
+                                new String[] {artifact.getGroupId(), artifact.getArtifactId(), artifact.getVersion()},
+                                ":"))
+                        .version(artifact.getVersion())))
+                .packagesToScan("com.openbanking.beneficiaries.controller")
+                .build();
+    }
 }

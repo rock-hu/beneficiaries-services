@@ -5,6 +5,4 @@ import org.springframework.stereotype.Controller;
 
 @Controller
 @Slf4j
-public class BeneficiariesApiController implements BeneficiariesApi {
-
-}
+public class BeneficiariesApiController implements BeneficiariesApi {}

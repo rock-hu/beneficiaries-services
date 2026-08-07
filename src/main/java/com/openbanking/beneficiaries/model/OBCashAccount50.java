@@ -9,12 +9,10 @@ import lombok.Setter;
 /**
  * Provides the details to identify the beneficiary account.
  */
-
 @Schema(description = "Provides the details to identify the beneficiary account.")
 @Getter
 @Setter
 public class OBCashAccount50 implements Serializable {
-	@Serial
-	private static final long serialVersionUID = 1L;
-
+    @Serial
+    private static final long serialVersionUID = 1L;
 }

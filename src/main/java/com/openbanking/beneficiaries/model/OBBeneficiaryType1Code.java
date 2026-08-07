@@ -4,25 +4,26 @@ package com.openbanking.beneficiaries.model;
  * Specifies the Beneficiary Type.
  */
 public enum OBBeneficiaryType1Code {
-	TRUSTED("Trusted"), ORDINARY("Ordinary");
+    TRUSTED("Trusted"),
+    ORDINARY("Ordinary");
 
-	private final String value;
+    private final String value;
 
-	OBBeneficiaryType1Code(String value) {
-		this.value = value;
-	}
+    OBBeneficiaryType1Code(String value) {
+        this.value = value;
+    }
 
-	@Override
-	public String toString() {
-		return value;
-	}
+    @Override
+    public String toString() {
+        return value;
+    }
 
-	public static OBBeneficiaryType1Code fromValue(String text) {
-		for (OBBeneficiaryType1Code b : OBBeneficiaryType1Code.values()) {
-			if (String.valueOf(b.value).equals(text)) {
-				return b;
-			}
-		}
-		return null;
-	}
+    public static OBBeneficiaryType1Code fromValue(String text) {
+        for (OBBeneficiaryType1Code b : OBBeneficiaryType1Code.values()) {
+            if (String.valueOf(b.value).equals(text)) {
+                return b;
+            }
+        }
+        return null;
+    }
 }
