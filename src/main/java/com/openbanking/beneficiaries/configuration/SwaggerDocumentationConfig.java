@@ -1,7 +1,5 @@
 package com.openbanking.beneficiaries.configuration;
 
-import io.swagger.v3.oas.models.info.Info;
-import org.apache.commons.lang3.StringUtils;
 import org.springdoc.core.models.GroupedOpenApi;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
@@ -24,7 +22,8 @@ public class SwaggerDocumentationConfig {
                 .group("beneficiaries-services")
                 // .addOpenApiCustomizer(openApi -> openApi.info(new Info()
                 //         .title(StringUtils.join(
-                //                 new String[] {artifact.getGroupId(), artifact.getArtifactId(), artifact.getVersion()},
+                //                 new String[] {artifact.getGroupId(), artifact.getArtifactId(),
+                // artifact.getVersion()},
                 //                 ":"))
                 //         .version(artifact.getVersion())))
                 .packagesToScan("com.openbanking.beneficiaries.controller")
